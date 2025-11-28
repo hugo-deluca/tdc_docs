@@ -92,7 +92,9 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | nb_campings                         | Nombre de campings                                                                                                          |
 | nb_hotels                           | Nombre d'hôtels                                                                                                             |
 | nb_act_autres                       | Nombre de locaux d'activité non compris dans les cas précédents                                                             |
-| stot_act_tertiaire                  | Surface de locaux d'activité tertiaire                                                                                      |
+| stot_act_tertiaire                  | Surface de locaux d'activité tertiaire (m²)                                                                                      |
+| surfaces_urba                  | Surfaces urbanisées (ha)                                                                                      |
+| surfaces_naf                  | Surface NAF (ha)                                                                                      |
 | revenus_d3                          | Troisième décile de revenus déclarés pour cette unité d'agrégation                                                          |
 | revenus_med                         | Médiane des revenus déclarés pour cette unité d'agrégation                                                                  |
 | revenus_d7                          | Septième décile de revenus déclarés pour cette unité d'agrégation                                                           |
