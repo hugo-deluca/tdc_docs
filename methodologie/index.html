@@ -140,6 +140,11 @@ Enfin, la détermination des EPCI ne peut pas être faite en utilisant les Fichi
 <li>seuls les départements contenant au moins une commune concernée sont retenus.</li>
 </ul>
 <p>L'avantage des méthodes d'agrégation à la commune et au département est qu'il est possible de procéder au calcul des résultats par jointure sémantique (c'est-à-dire en reliant des codes géographiques) plutôt que par jointure géographique : le traitement est beaucoup plus rapide.</p>
+<blockquote>
+<p>❗ <strong>Bon à savoir : cohérence entre les échelles d'agrégation</strong><br />
+La production des indicateurs nécessite d'effectuer des arrondis à l'entier supérieur pour obtenir des résultats viables (il paraît peu pertinent d'indiquer qu'on impact 2,31 locaux). Ainsi, il est normal d'identifier de légers décalages en sommant les résultats à la commune et à l'ensemble du périmètre, par exemple. Une conséquence directe est donc que plus l'échelle d'agrégation est segmentée en petits éléments, plus une surestimation est induite.<br />
+De plus, des petites différences géométriques peuvent modifier les résultats en fonction des échelles d'agrégation, par construction des Fichiers fonciers : les contours des départements et des communes ne sont pas équivalents à l'union des parcelles qui les constitue.</p>
+</blockquote>
 <h3 id="cas-particulier-des-echelles-dagregation-personnalisees">Cas particulier des échelles d'agrégation personnalisées</h3>
 <p>Si des échelles d'agrégation particulières sont passées pour regrouper les indicateurs (par exemple : zonages SLGITC), c'est un croisement géographique qui est effectué. Pour pallier les problématiques d'intersection sur plusieurs entités, par exemple avec des mutations, la méthode utilisée est la même dans l'ensemble de la routine. À chaque fois, la mutation est attribuée à l'entité géographique d'agrégation <strong>avec laquelle elle partage la plus grande intersection</strong>.</p>
 <h2 id="indicateurs-des-marches-fonciers-et-immobiliers">Indicateurs des marchés fonciers et immobiliers</h2>
