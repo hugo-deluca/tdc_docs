@@ -1,7 +1,6 @@
 site_name: "Recul du trait de côte : indicateurs et enjeux"
 nav:
-  - Home: index.md
-  - Contexte: contexte.md
+  - Contexte: index.md
   - Méthodologie: methodologie.md
   - Dictionnaire: dictionnaire.md
   - À propos: about.md
