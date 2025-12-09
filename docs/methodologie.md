@@ -118,6 +118,7 @@ La méthodologie de prise en compte des locaux et des parcelles est détaillée 
 ### Précisions sur les locaux
 
 La discrimination des locaux se fait à l'aide des variables ``dteloc`` (nature du local), ``jannath`` (année de construction redressée), ``stoth `` (surface d'habitation), ``typeloc`` (statut et mode d'occupation) et ``typact`` (nature de l'activité pour les locaux d'activité).  
+Les notions présentées ici peuvent être approfondies en prenant connaissance de [la documentation de la table des locaux des Fichiers fonciers](https://doc-datafoncier.cerema.fr/doc/ff/pb0010_local).
 On précise que, dans le cas des locaux d'activité tertiaire, la surface calculée correspond à la somme de la surface principale (surfaces essentielles à l'activité du local) et de la surface secondaire (potentiel commercial plus faible, comme les espaces techniques ou de stockage) renseignées dans la base.
 
 ### Précisions sur les surfaces NAF et urbanisées
@@ -125,3 +126,7 @@ On précise que, dans le cas des locaux d'activité tertiaire, la surface calcul
 Un calcul de la superficie des surfaces de type NAF et urbanisées dans le périmètre d'étude est proposé. Nous rappelons que seules les surfaces cadastrées sont comptées. Il est donc normal de trouver des différences entre la surface totale de l'unité d'agrégation comprise dans le périmètre d'étude et la somme des surfaces NAF et urbanisées fournies ici.  
 
 De plus, les modes de calcul sont très importants : il convient de bien distinguer [la surface géométrique et le reste](https://doc-datafoncier.cerema.fr/doc/guide/ff/dcntpa-surface-de-la-parcelle#differences-entre-la-surface-dcntpa-et-la-surface-geometrique). Enfin, il arrive que des parcelles qui contiennent une majeure partie de mer aient une surface fiscale bien inférieure à la surface géométrique réelle.
+
+### Précisions sur les surfaces de zones d'activité économiques
+
+Les surfaces présentées sont la somme des surfaces des zones d'activité économiques comprises dans le périmètre d'étude pour l'unité d'agrégation considérée. Ces surfaces sont calculées à partir de l'inventaire des zones d'activité économiques de la Région Hauts-de-France.

@@ -82,19 +82,20 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | nb_logts_petits                     | Nombre de logements de petite taille                                                                                        |
 | nb_logts_moyens                     | Nombre de logements de taille moyenne                                                                                       |
 | nb_logts_grands                     | Nombre de logements de grande taille                                                                                        |
-| nb_logts_rppo                         | Nombre de résidences principales occupées par leur propriétaire                                                             |
-| nb_logts_rppb                         | Nombre de résidences principales en location privée                                                                         |
-| nb_logts_rs                        | Nombre de résidences secondaires                                                                         |
-| nb_logts_autre                      | Nombre de logements qui ne sont ni vacants ni dans les deux situations précédentes (inclut les logements sociaux)                                         |
+| nb_logts_rppo                       | Nombre de résidences principales occupées par leur propriétaire                                                             |
+| nb_logts_rppb                       | Nombre de résidences principales en location privée                                                                         |
+| nb_logts_rs                         | Nombre de résidences secondaires                                                                                            |
+| nb_logts_autre                      | Nombre de logements qui ne sont ni vacants ni dans les deux situations précédentes (inclut les logements sociaux)           |
 | nb_logts_vac2a                      | Nombre de logements vacants depuis au moins 2 ans                                                                           |
 | nb_bureaux                          | Nombre de bureaux                                                                                                           |
 | nb_commerces                        | Nombre de commerces                                                                                                         |
 | nb_campings                         | Nombre de campings                                                                                                          |
 | nb_hotels                           | Nombre d'hôtels                                                                                                             |
 | nb_act_autres                       | Nombre de locaux d'activité non compris dans les cas précédents                                                             |
-| stot_act_tertiaire                  | Surface de locaux d'activité tertiaire (m²)                                                                                      |
-| surfaces_urba                  | Surfaces urbanisées (ha)                                                                                      |
-| surfaces_naf                  | Surface NAF (ha)                                                                                      |
+| stot_act_tertiaire                  | Surface de locaux d'activité tertiaire (m²)                                                                                 |
+| surfaces_urba                       | Surfaces urbanisées (ha)                                                                                                    |
+| surfaces_naf                        | Surface NAF (ha)                                                                                                            |
+| surface_zae_ha                      | Surface de zones d'activité économique (ha)                                                                                 |
 | revenus_d3                          | Troisième décile de revenus déclarés pour cette unité d'agrégation                                                          |
 | revenus_med                         | Médiane des revenus déclarés pour cette unité d'agrégation                                                                  |
 | revenus_d7                          | Septième décile de revenus déclarés pour cette unité d'agrégation                                                           |
