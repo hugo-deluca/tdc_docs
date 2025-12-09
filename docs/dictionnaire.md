@@ -94,8 +94,8 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | nb_act_autres                       | Nombre de locaux d'activité non compris dans les cas précédents                                                             |
 | stot_act_tertiaire                  | Surface de locaux d'activité tertiaire (m²)                                                                                 |
 | surfaces_urba                       | Surfaces urbanisées (ha)                                                                                                    |
-| surfaces_naf                        | Surface NAF (ha)                                                                                                            |
-| surface_zae_ha                      | Surface de zones d'activité économique (ha)                                                                                 |
+| surfaces_naf                        | Surfaces NAF (ha)                                                                                                           |
+| surface_zae_ha                      | Surface de zones d'activités économiques (ha)                                                                               |
 | revenus_d3                          | Troisième décile de revenus déclarés pour cette unité d'agrégation                                                          |
 | revenus_med                         | Médiane des revenus déclarés pour cette unité d'agrégation                                                                  |
 | revenus_d7                          | Septième décile de revenus déclarés pour cette unité d'agrégation                                                           |

@@ -29,7 +29,7 @@ Le calcul de ces indicateurs mobilise les bases de données suivantes :
 * ADMIN EXPRESS COG2024 (IGN) pour la détection des EPCI,
 * Table de conversion des € base 100 2015 (INSEE),
 * Filosofi 2021 (INSEE),
-* Inventaire des zones d'activité économiques (Région Hauts-de-France).
+* Inventaire des zones d'activités économiques (Région Hauts-de-France).
 
 Les bases de données issues de données fiscales sont le socle de ce traitement. Seules les communes cadastrées peuvent donc être correctement traitées par cette routine.
 
