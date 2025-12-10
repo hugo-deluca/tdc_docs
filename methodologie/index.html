@@ -90,6 +90,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#precisions-sur-les-surfaces-de-zones-dactivites-economiques">Précisions sur les surfaces de zones d'activités économiques</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#determination-des-tups-appartenant-a-des-multiproprietaires">Détermination des TUPs appartenant à des multipropriétaires</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -216,6 +218,16 @@ On précise que, dans le cas des locaux d'activité tertiaire, la surface calcul
 <p>De plus, les modes de calcul sont très importants : il convient de bien distinguer <a href="https://doc-datafoncier.cerema.fr/doc/guide/ff/dcntpa-surface-de-la-parcelle#differences-entre-la-surface-dcntpa-et-la-surface-geometrique">la surface géométrique et le reste</a>. Enfin, il arrive que des parcelles qui contiennent une majeure partie de mer aient une surface fiscale bien inférieure à la surface géométrique réelle.</p>
 <h3 id="precisions-sur-les-surfaces-de-zones-dactivites-economiques">Précisions sur les surfaces de zones d'activités économiques</h3>
 <p>Les surfaces présentées sont la somme des surfaces des zones d'activités économiques comprises dans le périmètre d'étude pour l'unité d'agrégation considérée. Ces surfaces sont calculées à partir de l'inventaire des zones d'activités économiques de la Région Hauts-de-France.</p>
+<h3 id="determination-des-tups-appartenant-a-des-multiproprietaires">Détermination des TUPs appartenant à des multipropriétaires</h3>
+<p>Cinq indicateurs sur les <a href="https://doc-datafoncier.cerema.fr/doc/guide/ff/le-foncier-non-bati-parcelle-suf-unite-fonciere-tup#la-table-des-tup">unités foncières (TUP)</a> <strong>bâties</strong> sont présentés pour contextualiser la multipropriété dans le périmètre d'étude. Le lecteur est invité à prendre connaissance de <a href="https://doc-datafoncier.cerema.fr/doc/guide/ff/definitions-liees-au-proprietaire">la documentation des Fichiers fonciers dédiée aux droits de propriété</a>.<br />
+Le but est de déterminer quelles TUPs dans le périmètre d'étude appartiennent à des multipropriétaires. Pour cela, une jointure est effectuée entre l'<code>idprocpte</code> (identifiant de compte propriétaire) de la TUP et l'<code>idpersonne</code>, un identifiant départemental de propriétaire, à l'aide de la table <code>proprietaire_droit</code>. Dans les cas où plusieurs comptes propriétaires existent pour une même TUP, cette jointure est faite autant de fois qu'il y a de comptes propriétaires, dans la limite du nombre affiché dans les Fichiers fonciers. L'association de l'<code>idpersonne</code> à la TUP permet ensuite de déterminer si le propriétaire possède d'autres TUP dans le périmètre d'impact ou ailleurs dans le département.  </p>
+<p>Pour ces indicateurs, les dénombrements sont faits <strong>sans application de la méthode du ratio d'intersection</strong>. Cependant, ce-dernier a été pris en compte pour qualifier les TUP comme étant "dans le périmètre d'étude" : elles doivent être intersectées à au moins 5 % de leur surface. Chaque TUP a été jointe à son unité d'agrégation par jointure sémantique dans le cas d'une agrégation à l'échelle communale ou départementale, ou par jointure géographique sinon. On a les correspondances suivantes :
+* <code>nb_tup</code> : nombre de TUP dans le périmètre d'étude dans l'unité d'agrégation considérée,
+* <code>nb_tup_multiple_in_perimetre</code> : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
+* <code>surface_multiple_in_perimetre</code> : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
+* <code>nb_tup_multiple_any</code> : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le même département,
+* <code>surface_multiple_in_perimetre</code> : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.  </p>
+<p>Par construction de ces indicateurs, les surfaces indiquées tiennent compte de la totalité des surfaces des TUP, sans intersection avec le périmètre d'étude.</p>
               
             </div>
           </div><footer>
