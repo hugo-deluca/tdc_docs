@@ -98,9 +98,9 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | surface_zae_ha                      | Surface de zones d'activités économiques (ha)                                                                                     |
 | nb_tup                              | Nombre de TUP dans le périmètre d'étude                                                                                           |
 | nb_tup_multiple_in_perimetre        | nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude |
-| surface_multiple_in_perimetre       | Somme des surfaces des TUP dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude              |
+| surface_multiple_in_perimetre       | Somme des surfaces des TUP dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude (ha)         |
 | nb_tup_multiple_any                 | Nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le même département  |
-| surface_multiple_in_perimetre       | Somme des surfaces des TUP dont le ou un des propriétaires possède également une autre TUP dans le même département               |
+| surface_multiple_in_perimetre       | Somme des surfaces des TUP dont le ou un des propriétaires possède également une autre TUP dans le même département (ha)          |
 | revenus_d3                          | Troisième décile de revenus déclarés pour cette unité d'agrégation                                                                |
 | revenus_med                         | Médiane des revenus déclarés pour cette unité d'agrégation                                                                        |
 | revenus_d7                          | Septième décile de revenus déclarés pour cette unité d'agrégation                                                                 |
