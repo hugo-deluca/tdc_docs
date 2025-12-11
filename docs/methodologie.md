@@ -137,10 +137,11 @@ Cinq indicateurs sur les [unités foncières (TUP)](https://doc-datafoncier.cere
 Le but est de déterminer quelles TUPs dans le périmètre d'étude appartiennent à des multipropriétaires. Pour cela, une jointure est effectuée entre l'``idprocpte`` (identifiant de compte propriétaire) de la TUP et l'``idpersonne``, un identifiant départemental de propriétaire, à l'aide de la table ``proprietaire_droit``. Dans les cas où plusieurs comptes propriétaires existent pour une même TUP, cette jointure est faite autant de fois qu'il y a de comptes propriétaires, dans la limite du nombre affiché dans les Fichiers fonciers. L'association de l'``idpersonne`` à la TUP permet ensuite de déterminer si le propriétaire possède d'autres TUP dans le périmètre d'impact ou ailleurs dans le département.  
 
 Pour ces indicateurs, les dénombrements sont faits **sans application de la méthode du ratio d'intersection**. Cependant, ce-dernier a été pris en compte pour qualifier les TUP comme étant "dans le périmètre d'étude" : elles doivent être intersectées à au moins 5 % de leur surface. Chaque TUP a été jointe à son unité d'agrégation par jointure sémantique dans le cas d'une agrégation à l'échelle communale ou départementale, ou par jointure géographique sinon. On a les correspondances suivantes :
-* ``nb_tup`` : nombre de TUP dans le périmètre d'étude dans l'unité d'agrégation considérée,  
-* ``nb_tup_multiple_in_perimetre`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,  
-* ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,  
-* ``nb_tup_multiple_any`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le même département,  
-* ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.  
+
+* ``nb_tup`` : nombre de TUP dans le périmètre d'étude dans l'unité d'agrégation considérée,
+* ``nb_tup_multiple_in_perimetre`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
+* ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
+* ``nb_tup_multiple_any`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le même département,
+* ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.
 
 Par construction de ces indicateurs, les surfaces indiquées tiennent compte de la totalité des surfaces des TUP, sans intersection avec le périmètre d'étude.
