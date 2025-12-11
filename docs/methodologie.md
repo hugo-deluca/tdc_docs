@@ -142,6 +142,6 @@ Pour ces indicateurs, les dénombrements sont faits **sans application de la mé
 * ``nb_tup_multiple_in_perimetre`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
 * ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le périmètre d'étude,
 * ``nb_tup_multiple_any`` : nombre de TUP dans le périmètre d'étude dont le ou un des propriétaires possède également une autre TUP dans le même département,
-* ``surface_multiple_in_perimetre`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.
+* ``surface_multiple_any`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.
 
 Par construction de ces indicateurs, les surfaces indiquées tiennent compte de la totalité des surfaces des TUP, sans intersection avec le périmètre d'étude.
