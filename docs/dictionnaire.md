@@ -41,8 +41,10 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | nbtrans_act_tertiaire           | Nombre de transactions de locaux d'activité tertiaire             |
 | nblocmut_maisons                | Nombre de maisons qui ont muté                                    |
 | px_med_maison                   | Prix médian d'une maison (€)                                      |
+| px_med_m2_maison                   | Prix médian d'une maison (€/m²)                                      |
 | nblocmut_appts                  | Nombre d'appartements qui ont muté                                |
 | px_med_appt                     | Prix médian d'un appartement (€)                                  |
+| px_med_m2_appt                     | Prix médian d'un appartement (€/m²)                                  |
 | nblocmut_act                    | Nombre de locaux d'activité qui ont muté                          |
 | nblocmut_act_tertiaire          | Nombre de locaux d'activité tertiaire qui ont muté                |
 | nb_mutations_foncier_nu_tab     | Nombre de mutations de fonciers nus supposés terrains à bâtir     |
@@ -85,7 +87,8 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | nb_logts_rppo                       | Nombre de résidences principales occupées par leur propriétaire                                                                   |
 | nb_logts_rppb                       | Nombre de résidences principales en location privée                                                                               |
 | nb_logts_rs                         | Nombre de résidences secondaires                                                                                                  |
-| nb_logts_autre                      | Nombre de logements qui ne sont ni vacants ni dans les deux situations précédentes (inclut les logements sociaux)                 |
+| nb_logts_soc                         | Nombre de logements sociaux                                                                                                  |
+| nb_logts_autre                      | Nombre de logements qui ne sont dans aucune des situations précédemment décrites                 |
 | nb_logts_vac2a                      | Nombre de logements vacants depuis au moins 2 ans                                                                                 |
 | nb_bureaux                          | Nombre de bureaux                                                                                                                 |
 | nb_commerces                        | Nombre de commerces                                                                                                               |
