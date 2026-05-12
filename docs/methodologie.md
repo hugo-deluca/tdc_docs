@@ -131,6 +131,19 @@ De plus, les modes de calcul sont très importants : il convient de bien disting
 
 Les surfaces présentées sont la somme des surfaces des zones d'activités économiques comprises dans le périmètre d'étude pour l'unité d'agrégation considérée. Ces surfaces sont calculées à partir de l'inventaire des zones d'activités économiques de la Région Hauts-de-France.
 
+### Précisions sur les surfaces de parcelles bâties avec usages dominant
+
+Les variables ``sparbat_hab``, ``sparbat_act``, ``sparbat_mixte`` font l'objet d'un traitement particulier. Seules les parcelles dont le coefficient ajusté est strictement supérieur à 0 sont considérées. Cela signifie que les parcelles prises en compte pour le calcul de ces indicateurs sont :
+* soit celles dont la superficie est inférieure à 200 m² et intersectée par le périmètre d'étude,
+* soit celles dont la superficie est supérieure à 200 m² et intersectées à au moins 5 % par le périmètre d'étude.
+
+La détermination de l'usage dominant s'appuie sur la variable ``tlocdomin``. Les regroupements ont été effectués comme suit :
+* habitat : ``tlocdomin IN ('MAISON', 'APPARTEMENT', 'DEPENDANCE')``,
+* activité : ``tlocdomin = 'ACTIVITE (COMMERCIAL)'``,
+* mixte : ``tlocdomin = 'MIXTE'``.
+
+Il est important de noter que les surfaces affichées concernent à la somme des surfaces réelles des parcelles, pas celles de leur itnersection avec le périmètre d'étude.
+
 ### Détermination des TUPs appartenant à des multipropriétaires
 
 Cinq indicateurs sur les [unités foncières (TUP)](https://doc-datafoncier.cerema.fr/doc/guide/ff/le-foncier-non-bati-parcelle-suf-unite-fonciere-tup#la-table-des-tup) **bâties** sont présentés pour contextualiser la multipropriété dans le périmètre d'étude. Le lecteur est invité à prendre connaissance de [la documentation des Fichiers fonciers dédiée aux droits de propriété](https://doc-datafoncier.cerema.fr/doc/guide/ff/definitions-liees-au-proprietaire).  
@@ -145,3 +158,76 @@ Pour ces indicateurs, les dénombrements sont faits **sans application de la mé
 * ``surface_multiple_any`` : somme des surfaces des TUP dans l'unité d'agrégation dont le ou un des propriétaires possède également une autre TUP dans le même département.
 
 Par construction de ces indicateurs, les surfaces indiquées tiennent compte de la totalité des surfaces des TUP, sans intersection avec le périmètre d'étude.
+
+### Détermination des copropriétés
+
+La base de données CoproFF, issue du croisement du RNIC et des Fichiers fonciers, a été utilisée pour déterminer les copropriétés intersectées par le périmètre d'éutde. Cette base propose plusieurs géométries pour les copropriétés. En fonction des situations, des méthodologies différentes ont été appliquées pour déterminer si la copropriété est considérée intersectée :
+* si une copropriété est localisée par un point dans le RNIC (localisation "précise") et qu'on dispose que son emprise au sol (en m²), la copropriété est assimilée à un disque de superficie de son emprise, centré sur le localisant RNIC. La copropriété est alors considérée impactée si le périmètre d'étude croise ce disque,
+* si une copropriété est localisée par un point dans le RNIC (localisation "précise") et qu'on ne dispose pas de son emprise au sol, la copropriété est considérée impactée si le périmètre d'étude croise le localisant de la copropriété,
+* si une coproriété n'a pas de localisation précise et que seul un localisant de TUP est disponible, la copropriété est considérée intersectée si elle est située sur une TUP pour laquelle coeff_tup_ajuste > 0.
+
+Les comptages sont ensuite ventilés dans différentes variables en fonction du nombre de lots dans la coproriété. Le nombre de lots des copropriétés qui ne sont pas immatriculées n'est pas disponible.
+
+## Détermination des équipements
+
+Les équipements comme les gares, les transformateurs électriques, les infrastructures de transport, les établissements publics... ont été déterminés par croisement géographique avec la BD TOPO, entre le périmètre d'étude et la géométrie de l'entité concernée dans la colonne `geometrie`. Les résultats ont été regroupés selon la logique suivante.
+|Catégorie 1               |Catégorie 2                                      |Regroupement          |
+|--------------------------|-------------------------------------------------|-------------------------|
+|Administratif ou militaire|Administration centrale de l'Etat                |Autres ERP               |
+|Administratif ou militaire|Autre Service Médico-Social                      |Autres ERP               |
+|Administratif ou militaire|Centre De Formation                              |Autres ERP               |
+|Administratif ou militaire|Divers public ou administratif                   |Autres ERP               |
+|Administratif ou militaire|Mairie                                           |Autres ERP               |
+|Administratif ou militaire|Palais de justice                                |Autres ERP               |
+|Administratif ou militaire|Poste                                            |Autres ERP               |
+|Administratif ou militaire|Service Administratif                            |Autres ERP               |
+|Administratif ou militaire|Service Administratif Du Domaine Fiscal          |Autres ERP               |
+|Administratif ou militaire|Service Administratif Du Domaine Médico-Social   |Autres ERP               |
+|Administratif ou militaire|Service D'Accueil Des Usagers                    |Autres ERP               |
+|Administratif ou militaire|Service D'Administration Local                   |Autres ERP               |
+|Administratif ou militaire|Service D'Aide Pour L'Emploi                     |Autres ERP               |
+|Administratif ou militaire|Service Judiciaire Et D'Accueil Du Public        |Autres ERP               |
+|Administratif ou militaire|Siège d'EPCI                                     |Autres ERP               |
+|Administratif ou militaire|Sous-préfecture                                  |Autres ERP               |
+|Administratif ou militaire|Tribunal                                         |Autres ERP               |
+|Administratif ou militaire|Établissement Pénitentiaire                      |Autres ERP               |
+|Culture et loisirs        |Bibliothèque et médiathèque                      |Autres ERP               |
+|Culture et loisirs        |Conservatoire                                    |Autres ERP               |
+|Culture et loisirs        |Musée                                            |Autres ERP               |
+|Culture et loisirs        |Salle de spectacles                              |Autres ERP               |
+|Petite enfance            |Crèche                                           |Autres ERP               |
+|Sport                     |Complexe sportif couvert                         |Autres ERP               |
+|Sport                     |Equipement sportif                               |Autres ERP               |
+|Sport                     |Patinoire                                        |Autres ERP               |
+|Sport                     |Piscine                                          |Autres ERP               |
+|Science et enseignement   |Autre service de l'éducation                     |Enseignement             |
+|Science et enseignement   |Collège                                          |Enseignement             |
+|Science et enseignement   |Enseignement primaire                            |Enseignement             |
+|Science et enseignement   |Enseignement supérieur                           |Enseignement             |
+|Science et enseignement   |Lycée                                            |Enseignement             |
+|Science et enseignement   |Structure d'accueil pour personnes handicapées   |Enseignement             |
+|Science et enseignement   |Université                                       |Enseignement             |
+|Gare                      |Gare fret uniquement                             |Gares                    |
+|Gare                      |Gare voyageurs et fret                           |Gares                    |
+|Gare                      |Gare voyageurs uniquement                        |Gares                    |
+|Administratif ou militaire|Caserne                                          |Gestion de crise         |
+|Administratif ou militaire|Caserne de pompiers                              |Gestion de crise         |
+|Administratif ou militaire|Enceinte militaire                               |Gestion de crise         |
+|Administratif ou militaire|Gendarmerie                                      |Gestion de crise         |
+|Administratif ou militaire|Police                                           |Gestion de crise         |
+|Gestion des eaux          |Station d'épuration                              |Infrastructures sensibles|
+|Industriel et commercial  |Déchèterie                                       |Infrastructures sensibles|
+|Production énergie        |Transformateur                                   |Infrastructures sensibles|
+|Monument                  |Monument historique ou classé                    |Monuments historiques    |
+|Santé                     |Etablissement de santé pour personnes handicapées|Santé                    |
+|Santé                     |Etablissement et service de santé                |Santé                    |
+|Santé                     |Etablissement hospitalier                        |Santé                    |
+|Santé                     |Hôpital                                          |Santé                    |
+|Santé                     |Maison de retraite                               |Santé                    |
+
+
+## Détermination des surfaces AU intersectées
+
+Les PLU et PLUi numérisés sont extraits du Géoportail de l'Urbanisme (version du 11/09/2024). Les cartes communales, qui peuvent parfois faire apparaître des zones dites constructibles sans être explicitement classées AU, sont ignorées.
+
+Une intersection est ensuite faite entre le périmètre d'étude et les zones des PLU, afin de déterminer les surfaces AUc et AUs concernées.

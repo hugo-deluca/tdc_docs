@@ -134,3 +134,65 @@ Cette page propose un lexique de correspondance entre nom de variable et signifi
 | sum_vf_non_bati                | Somme des montants des ventes pour cette catégorie de propriétaire  pour des mutations non bâties                        |
 | classement_sum_vf_non_bati     | Classement de la catégorie de propriétaire en fonction de la somme des montants des ventes pour des mutations non bâties |
 |                                |
+
+## Table `enjeux_volet3`
+
+Les informations de cette section concernent l'étude réalisée pour le compte de l'EPF Hauts-de-France en 2026, pour le volet 3 de calcul des enjeux sur divers scénarios.
+
+|Nom                  |Description                                                                        |Source               |
+|---------------------|-----------------------------------------------------------------------------------|---------------------|
+|nb_locaux            |Nombre de locaux                                                                   |FF 2024              |
+|slocal               |Surface bâtie totale des locaux (m²)                                               |FF 2024              |
+|stoth                |Surface d'habitation (m²)                                                          |FF 2024              |
+|nb_maisons           |Nombre de maisons                                                                  |FF 2024              |
+|nb_appts             |Nombre d'appartements                                                              |FF 2024              |
+|nb_logts_av45        |Nombre de logements construits avant 1945                                          |FF 2024              |
+|nb_logts_45_59       |Nombre de logements construits entre 1945 et 1959                                  |FF 2024              |
+|nb_logts_60_74       |Nombre de logements construits entre 1960 et 1974                                  |FF 2024              |
+|nb_logts_75_97       |Nombre de logements construits entre 1975 et 1997                                  |FF 2024              |
+|nb_logts_98_12       |Nombre de logements construits entre 1998 et 2012                                  |FF 2024              |
+|nb_logts_ap13        |Nombre de logements construits après 2013                                          |FF 2024              |
+|nb_logts_petits      |Nombre de logements de petite taille                                               |FF 2024              |
+|nb_logts_moyens      |Nombre de logements de taille moyenne                                              |FF 2024              |
+|nb_logts_grands      |Nombre de logements de grande taille                                               |FF 2024              |
+|nb_logts_rppo        |Nombre de résidences principales occupées par leur propriétaire                    |FF 2024              |
+|nb_logts_rppb        |Nombre de résidences principales en location privée                                |FF 2024              |
+|nb_logts_rs          |Nombre de résidences secondaires                                                   |FF 2024              |
+|nb_logts_soc         |Nombre de logements sociaux                                                        |FF 2024              |
+|nb_logts_autre       |Nombre de logements qui ne sont ni vacants, ni dans les deux situations précédentes|FF 2024              |
+|nb_logts_vac2a       |Nombre de logements qui ne sont dans aucune des situations précédemment décrites   |FF 2024              |
+|nb_loc_act_tertiaire |Nombre de locaux d'activité tertiaire                                              |FF 2024              |
+|sbati_act_tertiaire  |Surface de locaux d'activité tertiaire (m²)                                        |FF 2024              |
+|nb_loc_act_secondaire|Nombre de locaux d'activité secondaire                                             |FF 2024              |
+|sbati_act_secondaire |Surface de locaux d'activité secondaire (m²)                                       |FF 2024              |
+|nb_bureaux           |Nombre de bureaux                                                                  |FF 2024              |
+|nb_commerces         |Nombre de commerces                                                                |FF 2024              |
+|nb_campings          |Nombre de campings                                                                 |FF 2024              |
+|nb_hotels            |Nombre d'hôtels                                                                    |FF 2024              |
+|nb_loc_act_autre     |Nombre de locaux d'activité non compris dans les cas précédents                    |FF 2024              |
+|nb_eco_bleue         |Nombre de locaux d'activité dits de l'économie bleue                               |FF 2024              |
+|valeur_maisons       |Estimation de la valeur vénale des maisons                                         |Modèle de prix 2024  |
+|valeur_appts         |Estimation de la valeur vénale des appartements                                    |Modèle de prix 2024  |
+|nb_erp               |Nombres d’autres ERP                                                               |BD TOPO 2025 / ESPACE|
+|nb_enseignement      |Nombre d’établissements d’enseignement                                             |BD TOPO 2025 / ESPACE|
+|nb_gares             |Nombre de gares voyageurs et/ou fret                                               |BD TOPO 2025 / ESPACE|
+|nb_crise             |Nombre d’établissements de gestion de crise                                        |BD TOPO 2025 / ESPACE|
+|nb_sensible          |Nombre d’infrastructures sensibles                                                 |BD TOPO 2025 / ESPACE|
+|nb_hist              |Nombre de monuments historiques inscrits ou classés                                |BD TOPO 2025 / ESPACE|
+|nb_sante             |Nombre d’établissements de santé                                                   |BD TOPO 2025 / ESPACE|
+|lin_autoroute        |Linéaire d’autoroutes impactées (km)                                               |BD TOPO 2025         |
+|lin_route            |Linéaire de routes nationales, départementales, inercommunales impactées (km)      |BD TOPO 2025         |
+|lin_fer              |Linéaire de voies ferrées impactées (km)                                           |BD TOPO 2025         |
+|surfaces_urba        |Surfaces urbanisées (ha)                                                           |FF 2024              |
+|surfaces_naf         |Surfaces NAF (ha)                                                                  |FF 2024              |
+|sparbat_hab          |Surfaces de parcelles bâties dont l’usage dominant est habitat ou dépendance (ha)  |FF 2024              |
+|sparbat_act          |Surfaces de parcelles bâties dont l’usage dominant est activité (ha)               |FF 2024              |
+|sparbat_mixte        |Surfaces de parcelles bâties dont l’usage dominant est mixte (ha)                  |FF 2024              |
+|surface_zae_ha       |Surface de zones d'activités économiques (ha)                                      |FF 2024              |
+|szone_auc            |Surface de zones AUc intersectées (ha)                                             |GPU 11/09/2024       |
+|szone_aus            |Surface de zones AUs intersectées (ha)                                             |GPU 11/09/2024       |
+|nb_copro_10          |Nombre de copropriétés de 10 lots ou moins                                         |CoproFF 2024         |
+|nb_copro_11_49       |Nombre de copropriétés de 11 à 49 lots                                             |CoproFF 2024         |
+|nb_copro_50_99       |Nombre de copropriétés de 50 à 99 lots                                             |CoproFF 2024         |
+|nb_copro_100         |Nombre de copropriétés d’au moins 100 lots                                         |CoproFF 2024         |
+|nb_copro_null        |Nombre de copropriétés de nombre de lots inconnu                                   |CoproFF 2024         |
