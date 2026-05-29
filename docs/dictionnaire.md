@@ -175,11 +175,15 @@ Les informations de cette section concernent l'étude réalisée pour le compte 
 |valeur_appts         |Estimation de la valeur vénale des appartements                                    |Modèle de prix 2024  |
 |nb_erp               |Nombres d’autres ERP                                                               |BD TOPO 2025 / ESPACE|
 |nb_enseignement      |Nombre d’établissements d’enseignement                                             |BD TOPO 2025 / ESPACE|
+|nb_enseignement_public      |Nombre d’établissements d’enseignement public                                             |BD TOPO 2025 / ESPACE|
+|nb_enseignement_prive      |Nombre d’établissements d’enseignement privé                                            |BD TOPO 2025 / ESPACE|
+|nb_enseignement_inconnu      |Nombre d’établissements d’enseignement statut inconnu                                             |BD TOPO 2025 / ESPACE|
 |nb_gares             |Nombre de gares voyageurs et/ou fret                                               |BD TOPO 2025 / ESPACE|
 |nb_crise             |Nombre d’établissements de gestion de crise                                        |BD TOPO 2025 / ESPACE|
 |nb_sensible          |Nombre d’infrastructures sensibles                                                 |BD TOPO 2025 / ESPACE|
 |nb_hist              |Nombre de monuments historiques inscrits ou classés                                |BD TOPO 2025 / ESPACE|
 |nb_sante             |Nombre d’établissements de santé                                                   |BD TOPO 2025 / ESPACE|
+|nb_icpe      |Nombre d’ICPE                                             |Georisques 2026|
 |lin_autoroute        |Linéaire d’autoroutes impactées (km)                                               |BD TOPO 2025         |
 |lin_route            |Linéaire de routes nationales, départementales, inercommunales impactées (km)      |BD TOPO 2025         |
 |lin_fer              |Linéaire de voies ferrées impactées (km)                                           |BD TOPO 2025         |

@@ -225,6 +225,9 @@ Les équipements comme les gares, les transformateurs électriques, les infrastr
 |Santé                     |Hôpital                                          |Santé                    |
 |Santé                     |Maison de retraite                               |Santé                    |
 
+### Cas des ICPE
+
+Les ICPE ont été récupérées en mai 2026 sur Georisques. Seule la première catégorie a été retenue : *les établissements soumis à autorisation ou enregistrement en exploitation avec titre et ceux pour lesquels nous avons des dates d'inspection antérieures à 2022, ou une inspection avec rapport après le 1er janvier 2022* (extrait de [Georisques](https://www.georisques.gouv.fr/risques/installations/donnees?page=1)).
 
 ## Détermination des surfaces AU intersectées
 
