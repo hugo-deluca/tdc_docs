@@ -171,59 +171,59 @@ Les comptages sont ensuite ventilés dans différentes variables en fonction du 
 ## Détermination des équipements
 
 Les équipements comme les gares, les transformateurs électriques, les infrastructures de transport, les établissements publics... ont été déterminés par croisement géographique avec la BD TOPO, entre le périmètre d'étude et la géométrie de l'entité concernée dans la colonne `geometrie`. Les résultats ont été regroupés selon la logique suivante.
-|Catégorie 1               |Catégorie 2                                      |Regroupement          |
-|--------------------------|-------------------------------------------------|-------------------------|
-|Administratif ou militaire|Administration centrale de l'Etat                |Autres ERP               |
-|Administratif ou militaire|Autre Service Médico-Social                      |Autres ERP               |
-|Administratif ou militaire|Centre De Formation                              |Autres ERP               |
-|Administratif ou militaire|Divers public ou administratif                   |Autres ERP               |
-|Administratif ou militaire|Mairie                                           |Autres ERP               |
-|Administratif ou militaire|Palais de justice                                |Autres ERP               |
-|Administratif ou militaire|Poste                                            |Autres ERP               |
-|Administratif ou militaire|Service Administratif                            |Autres ERP               |
-|Administratif ou militaire|Service Administratif Du Domaine Fiscal          |Autres ERP               |
-|Administratif ou militaire|Service Administratif Du Domaine Médico-Social   |Autres ERP               |
-|Administratif ou militaire|Service D'Accueil Des Usagers                    |Autres ERP               |
-|Administratif ou militaire|Service D'Administration Local                   |Autres ERP               |
-|Administratif ou militaire|Service D'Aide Pour L'Emploi                     |Autres ERP               |
-|Administratif ou militaire|Service Judiciaire Et D'Accueil Du Public        |Autres ERP               |
-|Administratif ou militaire|Siège d'EPCI                                     |Autres ERP               |
-|Administratif ou militaire|Sous-préfecture                                  |Autres ERP               |
-|Administratif ou militaire|Tribunal                                         |Autres ERP               |
-|Administratif ou militaire|Établissement Pénitentiaire                      |Autres ERP               |
-|Culture et loisirs        |Bibliothèque et médiathèque                      |Autres ERP               |
-|Culture et loisirs        |Conservatoire                                    |Autres ERP               |
-|Culture et loisirs        |Musée                                            |Autres ERP               |
-|Culture et loisirs        |Salle de spectacles                              |Autres ERP               |
-|Petite enfance            |Crèche                                           |Autres ERP               |
-|Sport                     |Complexe sportif couvert                         |Autres ERP               |
-|Sport                     |Equipement sportif                               |Autres ERP               |
-|Sport                     |Patinoire                                        |Autres ERP               |
-|Sport                     |Piscine                                          |Autres ERP               |
-|Science et enseignement   |Autre service de l'éducation                     |Enseignement             |
-|Science et enseignement   |Collège                                          |Enseignement             |
-|Science et enseignement   |Enseignement primaire                            |Enseignement             |
-|Science et enseignement   |Enseignement supérieur                           |Enseignement             |
-|Science et enseignement   |Lycée                                            |Enseignement             |
-|Science et enseignement   |Structure d'accueil pour personnes handicapées   |Enseignement             |
-|Science et enseignement   |Université                                       |Enseignement             |
-|Gare                      |Gare fret uniquement                             |Gares                    |
-|Gare                      |Gare voyageurs et fret                           |Gares                    |
-|Gare                      |Gare voyageurs uniquement                        |Gares                    |
-|Administratif ou militaire|Caserne                                          |Gestion de crise         |
-|Administratif ou militaire|Caserne de pompiers                              |Gestion de crise         |
-|Administratif ou militaire|Enceinte militaire                               |Gestion de crise         |
-|Administratif ou militaire|Gendarmerie                                      |Gestion de crise         |
-|Administratif ou militaire|Police                                           |Gestion de crise         |
-|Gestion des eaux          |Station d'épuration                              |Infrastructures sensibles|
-|Industriel et commercial  |Déchèterie                                       |Infrastructures sensibles|
-|Production énergie        |Transformateur                                   |Infrastructures sensibles|
-|Monument                  |Monument historique ou classé                    |Monuments historiques    |
-|Santé                     |Etablissement de santé pour personnes handicapées|Santé                    |
-|Santé                     |Etablissement et service de santé                |Santé                    |
-|Santé                     |Etablissement hospitalier                        |Santé                    |
-|Santé                     |Hôpital                                          |Santé                    |
-|Santé                     |Maison de retraite                               |Santé                    |
+| Catégorie 1                | Catégorie 2                                       | Regroupement              |
+|----------------------------|---------------------------------------------------|---------------------------|
+| Administratif ou militaire | Administration centrale de l'Etat                 | Autres ERP                |
+| Administratif ou militaire | Autre Service Médico-Social                       | Autres ERP                |
+| Administratif ou militaire | Centre De Formation                               | Autres ERP                |
+| Administratif ou militaire | Divers public ou administratif                    | Autres ERP                |
+| Administratif ou militaire | Mairie                                            | Autres ERP                |
+| Administratif ou militaire | Palais de justice                                 | Autres ERP                |
+| Administratif ou militaire | Poste                                             | Autres ERP                |
+| Administratif ou militaire | Service Administratif                             | Autres ERP                |
+| Administratif ou militaire | Service Administratif Du Domaine Fiscal           | Autres ERP                |
+| Administratif ou militaire | Service Administratif Du Domaine Médico-Social    | Autres ERP                |
+| Administratif ou militaire | Service D'Accueil Des Usagers                     | Autres ERP                |
+| Administratif ou militaire | Service D'Administration Local                    | Autres ERP                |
+| Administratif ou militaire | Service D'Aide Pour L'Emploi                      | Autres ERP                |
+| Administratif ou militaire | Service Judiciaire Et D'Accueil Du Public         | Autres ERP                |
+| Administratif ou militaire | Siège d'EPCI                                      | Autres ERP                |
+| Administratif ou militaire | Sous-préfecture                                   | Autres ERP                |
+| Administratif ou militaire | Tribunal                                          | Autres ERP                |
+| Administratif ou militaire | Établissement Pénitentiaire                       | Autres ERP                |
+| Culture et loisirs         | Bibliothèque et médiathèque                       | Autres ERP                |
+| Culture et loisirs         | Conservatoire                                     | Autres ERP                |
+| Culture et loisirs         | Musée                                             | Autres ERP                |
+| Culture et loisirs         | Salle de spectacles                               | Autres ERP                |
+| Petite enfance             | Crèche                                            | Autres ERP                |
+| Sport                      | Complexe sportif couvert                          | Autres ERP                |
+| Sport                      | Equipement sportif                                | Autres ERP                |
+| Sport                      | Patinoire                                         | Autres ERP                |
+| Sport                      | Piscine                                           | Autres ERP                |
+| Science et enseignement    | Autre service de l'éducation                      | Enseignement              |
+| Science et enseignement    | Collège                                           | Enseignement              |
+| Science et enseignement    | Enseignement primaire                             | Enseignement              |
+| Science et enseignement    | Enseignement supérieur                            | Enseignement              |
+| Science et enseignement    | Lycée                                             | Enseignement              |
+| Science et enseignement    | Structure d'accueil pour personnes handicapées    | Enseignement              |
+| Science et enseignement    | Université                                        | Enseignement              |
+| Gare                       | Gare fret uniquement                              | Gares                     |
+| Gare                       | Gare voyageurs et fret                            | Gares                     |
+| Gare                       | Gare voyageurs uniquement                         | Gares                     |
+| Administratif ou militaire | Caserne                                           | Gestion de crise          |
+| Administratif ou militaire | Caserne de pompiers                               | Gestion de crise          |
+| Administratif ou militaire | Enceinte militaire                                | Gestion de crise          |
+| Administratif ou militaire | Gendarmerie                                       | Gestion de crise          |
+| Administratif ou militaire | Police                                            | Gestion de crise          |
+| Gestion des eaux           | Station d'épuration                               | Infrastructures sensibles |
+| Industriel et commercial   | Déchèterie                                        | Infrastructures sensibles |
+| Production énergie         | Transformateur                                    | Infrastructures sensibles |
+| Monument                   | Monument historique ou classé                     | Monuments historiques     |
+| Santé                      | Etablissement de santé pour personnes handicapées | Santé                     |
+| Santé                      | Etablissement et service de santé                 | Santé                     |
+| Santé                      | Etablissement hospitalier                         | Santé                     |
+| Santé                      | Hôpital                                           | Santé                     |
+| Santé                      | Maison de retraite                                | Santé                     |
 
 ### Cas des ICPE
 
