@@ -170,7 +170,8 @@ Les comptages sont ensuite ventilés dans différentes variables en fonction du 
 
 ## Détermination des équipements
 
-Les équipements comme les gares, les transformateurs électriques, les infrastructures de transport, les établissements publics... ont été déterminés par croisement géographique avec la BD TOPO, entre le périmètre d'étude et la géométrie de l'entité concernée dans la colonne `geometrie`. Les résultats ont été regroupés selon la logique suivante.
+Les équipements comme les gares, les transformateurs électriques, les infrastructures de transport, les établissements publics... ont été déterminés par croisement géographique avec la BD TOPO, entre le périmètre d'étude et la géométrie de l'entité concernée dans la colonne `geometrie`. Les résultats ont été regroupés selon la logique suivante.  
+
 | Catégorie 1                | Catégorie 2                                       | Regroupement              |
 |----------------------------|---------------------------------------------------|---------------------------|
 | Administratif ou militaire | Administration centrale de l'Etat                 | Autres ERP                |

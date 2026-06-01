@@ -1,6 +1,6 @@
 [project]
 name = "tdc-docs"
-version = "0.1.2"
+version = "0.1.3"
 description = "Documentation de la méthodologie recul du trait de côte pour l'EPF Hauts-de-France"
 readme = "README.md"
 requires-python = ">=3.13"
