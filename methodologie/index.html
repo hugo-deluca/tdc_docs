@@ -219,6 +219,8 @@ Il y a alors deux possibilités :</p>
 <li>si le local dispose d'une <code>geomrnb</code> non NULL, on le compte alors au "réel" : on assimile le bâtiment à un disque de superficie égale à <code>rnb_emp</code> et de centre <code>geomrnb</code> et on l’intersecte à la zone d’étude,</li>
 <li>si le local a une <code>geomrnb</code> NULL : on le pondère avec le ratio d'intersection ajusté de sa TUP de rattachement, calculé ci-avant.</li>
 </ol>
+<p>Le logigramme suivant représente la cinématique de comptage des locaux.</p>
+<p><img alt="logigramme_local" src="../img/logigramme_local.png" /></p>
 <h2 id="indicateurs-de-stock-locaux-surfaces">Indicateurs de stock (locaux, surfaces)</h2>
 <p>La méthodologie de prise en compte des locaux et des parcelles est détaillée dans la partie ci-avant. Le calcul, par exemple, du nombre de maisons dans le périmètre d'étude revient donc à effectuer une somme des coefficients de prise en compte des locaux, plutôt que de les compter inclus dans le périmètre systématiquement.</p>
 <h3 id="precisions-sur-les-locaux">Précisions sur les locaux</h3>
@@ -257,6 +259,8 @@ Le but est de déterminer quelles TUPs dans le périmètre d'étude appartiennen
 * si une copropriété est localisée par un point dans le RNIC (localisation "précise") et qu'on ne dispose pas de son emprise au sol, la copropriété est considérée impactée si le périmètre d'étude croise le localisant de la copropriété,
 * si une coproriété n'a pas de localisation précise et que seul un localisant de TUP est disponible, la copropriété est considérée intersectée si elle est située sur une TUP pour laquelle coeff_tup_ajuste &gt; 0.</p>
 <p>Les comptages sont ensuite ventilés dans différentes variables en fonction du nombre de lots dans la coproriété. Le nombre de lots des copropriétés qui ne sont pas immatriculées n'est pas disponible.</p>
+<p>Le logigramme suivant représente la cinématique de comptage des locaux.</p>
+<p><img alt="logigramme_copro" src="../img/logigramme_copro.png" /></p>
 <h2 id="determination-des-equipements">Détermination des équipements</h2>
 <p>Les équipements comme les gares, les transformateurs électriques, les infrastructures de transport, les établissements publics... ont été déterminés par croisement géographique avec la BD TOPO, entre le périmètre d'étude et la géométrie de l'entité concernée dans la colonne <code>geometrie</code>. Les résultats ont été regroupés selon la logique suivante.  </p>
 <table>
