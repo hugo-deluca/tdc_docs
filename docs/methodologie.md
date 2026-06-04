@@ -111,6 +111,11 @@ Il y a alors deux possibilités :
 1. si le local dispose d'une `geomrnb` non NULL, on le compte alors au "réel" : on assimile le bâtiment à un disque de superficie égale à `rnb_emp` et de centre `geomrnb` et on l’intersecte à la zone d’étude,
 2. si le local a une `geomrnb` NULL : on le pondère avec le ratio d'intersection ajusté de sa TUP de rattachement, calculé ci-avant.
 
+Le logigramme suivant représente la cinématique de comptage des locaux.
+
+![logigramme_local](../img/logigramme_local.png)
+
+
 ## Indicateurs de stock (locaux, surfaces)
 
 La méthodologie de prise en compte des locaux et des parcelles est détaillée dans la partie ci-avant. Le calcul, par exemple, du nombre de maisons dans le périmètre d'étude revient donc à effectuer une somme des coefficients de prise en compte des locaux, plutôt que de les compter inclus dans le périmètre systématiquement.
@@ -167,6 +172,11 @@ La base de données CoproFF, issue du croisement du RNIC et des Fichiers foncier
 * si une coproriété n'a pas de localisation précise et que seul un localisant de TUP est disponible, la copropriété est considérée intersectée si elle est située sur une TUP pour laquelle coeff_tup_ajuste > 0.
 
 Les comptages sont ensuite ventilés dans différentes variables en fonction du nombre de lots dans la coproriété. Le nombre de lots des copropriétés qui ne sont pas immatriculées n'est pas disponible.
+
+Le logigramme suivant représente la cinématique de comptage des locaux.
+
+![logigramme_copro](../img/logigramme_copro.png)
+
 
 ## Détermination des équipements
 
