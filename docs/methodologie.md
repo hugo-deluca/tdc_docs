@@ -113,7 +113,7 @@ Il y a alors deux possibilités :
 
 Le logigramme suivant représente la cinématique de comptage des locaux.
 
-![logigramme_local](../img/logigramme_local.png)
+![logigramme_local](img/logigramme_local.png)
 
 
 ## Indicateurs de stock (locaux, surfaces)
@@ -175,7 +175,7 @@ Les comptages sont ensuite ventilés dans différentes variables en fonction du 
 
 Le logigramme suivant représente la cinématique de comptage des locaux.
 
-![logigramme_copro](../img/logigramme_copro.png)
+![logigramme_copro](img/logigramme_copro.png)
 
 
 ## Détermination des équipements
