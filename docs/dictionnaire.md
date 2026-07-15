@@ -173,6 +173,12 @@ Les informations de cette section concernent l'étude réalisée pour le compte 
 |nb_eco_bleue         |Nombre de locaux d'activité dits de l'économie bleue                               |FF 2024              |
 |valeur_maisons       |Estimation de la valeur vénale des maisons                                         |Modèle de prix 2024  |
 |valeur_appts         |Estimation de la valeur vénale des appartements                                    |Modèle de prix 2024  |
+|valeur_rppo         |Estimation de la valeur vénale des résidences principales occupées par leur propriétaire                                    |Modèle de prix 2024  |
+|valeur_rppb         |Estimation de la valeur vénale des résidences principales en location privée                                    |Modèle de prix 2024  |
+|valeur_rs         |Estimation de la valeur vénale des résidences secondaires                                    |Modèle de prix 2024  |
+|valeur_soc         |Estimation de la valeur vénale des logements sociaux                                    |Modèle de prix 2024  |
+|valeur_autre         |Estimation de la valeur vénale des logements qui ne sont dans aucune des situations précédemment décrites                                    |Modèle de prix 2024  |
+|valeur_vac2a         |Estimation de la valeur vénale des logements vacants depuis au moins 2 ans                                    |Modèle de prix 2024  |
 |nb_erp               |Nombres d’autres ERP                                                               |BD TOPO 2025 / ESPACE|
 |nb_enseignement      |Nombre d’établissements d’enseignement                                             |BD TOPO 2025 / ESPACE|
 |nb_enseignement_public      |Nombre d’établissements d’enseignement public                                             |BD TOPO 2025 / ESPACE|
